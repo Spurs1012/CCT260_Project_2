@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>Hill</h1>
+        </div>
+        <div class="nav-right">
+            <a href="#Home" class="active">Home</a>
+            <a href="works.html">Works</a>
+            <a href="process.html">Process</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>UX/UI Designer & Web Developer</p>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="portrait">
+            <img src="me.jpg" alt="Hill's Portrait">
+        </div>
+
+        <div class="right-content">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    Pursuing a degree in <strong>Digital Enterprise Management</strong> and <strong>Computer Science</strong> with a focus 
+                    on <strong>UX/UI design</strong>, I have an understanding of web languages and design tools that bridge the design and 
+                    development worlds seamlessly. I'm deeply passionate about crafting designs that resonate, and I'm always in tune with 
+                    the pulse of the UX/UI world.
+                </p>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <div class="skills-block languages">
+                <h3>Skills</h3>  
+                <div class="skill-cards">
+                    <img src="python_Logo.png" alt="Python Logo">
+                    <img src="java_Logo.png" alt="Java Logo">
+                    <img src="hmtl_Logo.png" alt="HTML Logo">
+                    <img src="css_Logo.png" alt="CSS Logo">
+                    <img src="js_Logo.png" alt="JavaScript Logo">
+                    <img src="figma_Logo.png" alt="Figma Logo">
+                    <img src="ps_Logo.png" alt="Photoshop Logo">
+                </div>
+            </div>
+        </div>
+            
+        <div class="more-about-section">
+            <button id="moreAboutMeButton">More About Me</button>
+            <div id="moreAboutMeContent" style="display: none;">
+                <p>In my free time I like to play football and basketball. My 2 favorite teams are Barcelona FC and Cleveland Cavaliers.</p>
+                    
+                <!-- YouTube Video 1 -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RisqBSF3BTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <!-- YouTube Video 2 -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v4vB3G7kgyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </section>
+        
+    <footer id="footer">
+        <h3>If You Like What You See, Let's Work Together!</h3>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="email_Logo.png" alt="Email Logo">
+                <p>sirisakhill@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="phone_Logo.png" alt="Phone Logo">
+                <p>+1 647-989-9078</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="linkedin_url">
+                <img src="linkedin_Logo.png" alt="LinkedIn Logo">
+            </a>
+            <a href="https://github.com/Spurs1012">
+                <img src="github_Logo.png" alt="Github Logo">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('moreAboutMeButton').addEventListener('click', function() {
+            var content = document.getElementById('moreAboutMeContent');
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
